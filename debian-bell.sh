@@ -40,3 +40,6 @@ echo "set bell-style none" > ~/.inputrc
 
 sudo systemctl set-default multi-user.target
 sudo systemctl set-default graphical.target
+
+sudo ufw allow ssh
+sudo ufw enable
