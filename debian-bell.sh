@@ -34,3 +34,6 @@ EOD
 sudo rmmod pcspkr
 
 echo "set bell-style none" > ~/.inputrc
+
+# Add the following to /etc/sudoers
+# derik   ALL=(ALL:ALL) ALL
