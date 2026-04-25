@@ -22,7 +22,7 @@ systemctl daemon-reload
 systemctl enable silence-console
 systemctl start silence-console
 
-cat > /etc/X11/Xsession.d/91custom-silence-beep <EOD
+cat > /etc/X11/Xsession.d/91custom-silence-beep <<EOD
 #!/bin/sh
 xset -b
 EOD
