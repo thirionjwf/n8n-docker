@@ -27,3 +27,10 @@ cat > /etc/X11/Xsession.d/91custom-silence-beep <<EOD
 xset -b
 EOD
 chmod +x /etc/X11/Xsession.d/91custom-silence-beep
+
+cat > /etc/modprobe.d/nobeep.conf <<EOD
+blacklist pcspkr
+EOD
+sudo rmmod pcspkr
+
+echo "set bell-style none" > ~/.inputrc
