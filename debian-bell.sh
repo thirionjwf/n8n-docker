@@ -37,3 +37,6 @@ echo "set bell-style none" > ~/.inputrc
 
 # Add the following to /etc/sudoers
 # derik   ALL=(ALL:ALL) ALL
+
+sudo systemctl set-default multi-user.target
+sudo systemctl set-default graphical.target
